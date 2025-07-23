@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virmary Guerrero | Portafolio Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a0a0a;
+      --accent: #d4af37;
+      --light: #ffffff;
+      --dark: #1a1a1a;
+      --font: 'Outfit', sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font);
+      background-color: var(--primary);
+      color: var(--light);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(to right, #0a0a0aee, #1c1c1cdd), url('fondo-impactante.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      animation: fadeIn 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ddd;
+      animation: fadeIn 2s ease-in-out;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+    .sobre-mi {
+      text-align: center;
+    }
+    .sobre-mi img {
+      max-width: 180px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+    .servicios, .proyectos, .testimonios {
+      display: grid;
+      gap: 2rem;
+    }
+    .card {
+      background-color: var(--dark);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 30px rgba(212, 175, 55, 0.3);
+    }
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .card a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+    .cta a {
+      background-color: var(--accent);
+      color: var(--primary);
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .cta a:hover {
+      background-color: #bfa02e;
+      transform: scale(1.05);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: var(--accent);
+      color: var(--primary);
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #bfa02e;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    @media (min-width: 768px) {
+      .servicios, .proyectos, .testimonios {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .servicios, .proyectos {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Virmary Guerrero</h1>
+      <p>Creatividad y tecnología en perfecta armonía. Desarrollo, estrategia y estética al servicio de tu visión.</p>
+    </div>
+  </header>
+
+  <section class="sobre-mi">
+    <h2>Sobre mí</h2>
+    <img src="tu-foto.jpg" alt="Virmary Guerrero" />
+    <p>Soy una profesional apasionada por la tecnología y la estética. Combino mi experiencia en desarrollo web fullstack, ciberseguridad, gestión de proyectos y modelaje para crear soluciones digitales únicas y visualmente impactantes.</p>
+  </section>
+
+  <section class="servicios">
+    <h2>Servicios</h2>
+    <div class="card">Desarrollo Web Fullstack</div>
+    <div class="card">Diseño UI/UX Estratégico</div>
+    <div class="card">Análisis de Ciberseguridad</div>
+    <div class="card">Gestión de Proyectos Tecnológicos</div>
+  </section>
+
+  <section class="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="card">
+      <h3>Plataforma GROWZA</h3>
+      <p>Una plataforma que conecta productores sostenibles con consumidores conscientes.</p>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <h3>Sitio Web Portafolio</h3>
+      <p>Diseño personalizado, animaciones y experiencia de usuario pensada para captar clientes.</p>
+      <a href="#">Ver más</a>
+    </div>
+  </section>
+
+  <section class="testimonios">
+    <h2>Logros y Reconocimientos</h2>
+    <div class="card">Certificación en Ciberseguridad por Google</div>
+    <div class="card">Prácticas como analista en Jazzplat</div>
+    <div class="card">Finalista en hackathon de innovación digital 2024</div>
+  </section>
+
+  <section class="cta">
+    <h2>¿Trabajamos juntas?</h2>
+    <p>Estoy lista para ayudarte a llevar tu proyecto al siguiente nivel.</p>
+    <a href="https://www.linkedin.com/in/virmary">Conectemos en LinkedIn</a>
+  </section>
+
+  <section>
+    <h2>Contáctame</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo electrónico" required />
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Sígueme:
+      <a href="https://www.instagram.com/tuusuario">Instagram</a> |
+      <a href="https://github.com/tuusuario">GitHub</a> |
+      <a href="https://linkedin.com/in/virmary">LinkedIn</a>
+    </p>
+    <p>&copy; 2025 Virmary Guerrero</p>
+  </footer>
+</body>
+</html>
+
+
